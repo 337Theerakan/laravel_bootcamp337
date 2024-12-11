@@ -1,0 +1,9 @@
+กำหนดโครงสร้างตาราง chirps ในฐานข้อมูล Primary Key (PK)
+เช่น user_id(ที่เชื่อมกับผู้ใช้), message (ข้อความ) timestamps(การบันทึกเวลา) 90
+
+foreignId ()ทำให้ user_id เชื่อมโยงกับตาราง users
+(Foreign Key)
+//คือ 2024_12_03_021938_create_chirps_table ใน migrations
+
+database เก็บข้อมูลไม่ว่าจะเป็นอันที่รเราพิมรวมถึง อีเมล์
+
