@@ -25,10 +25,11 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+
 //การต้องค่าให้กำงาน ไปที่ใหน อะไรบ้าง
 Route::resource('chirps', ChirpController::class) //ไปที่ app -> Controllers -> ChirpController
     ->only(['index', 'store', 'update', 'destroy']) //ให้ทำงาน(เห็น) ตรง 'index', 'store', 'update', 'destroy ใน ChirpController
     ->middleware(['auth', 'verified']);
 
-    
 require __DIR__.'/auth.php';

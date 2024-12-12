@@ -1,10 +1,10 @@
 <?php
-
+//มีการกำหนดกฎเพื่อควบคุมสิทธิ์การกระทำต่าง
 namespace App\Policies;
 
 use App\Models\Chirp;
 use App\Models\User;
-use Illuminate\Auth\Access\Response;
+use Illuminate\Auth\Access\Response; //ตัวตรวจสอบสิทธิ์
 
 class ChirpPolicy
 {
