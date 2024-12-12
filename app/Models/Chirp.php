@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Chirp extends Model
+//เก็ยข้อมูล
 {
     use HasFactory;
 

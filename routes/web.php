@@ -19,6 +19,7 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
 //หน้า โปรไฟล์ผู้ใช้ ที่มีการ เเก้ อัพ ลบ
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -27,7 +28,7 @@ Route::middleware('auth')->group(function () {
 });
 
 
-//การต้องค่าให้กำงาน ไปที่ใหน อะไรบ้าง
+//การต้องค่าให้กำหนดงาน ไปที่ใหน อะไรบ้าง
 Route::resource('chirps', ChirpController::class) //ไปที่ app -> Controllers -> ChirpController
     ->only(['index', 'store', 'update', 'destroy']) //ให้ทำงาน(เห็น) ตรง 'index', 'store', 'update', 'destroy ใน ChirpController
     ->middleware(['auth', 'verified']);

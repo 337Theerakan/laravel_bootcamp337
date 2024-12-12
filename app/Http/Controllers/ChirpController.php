@@ -15,7 +15,7 @@ class ChirpController extends Controller
     /**
      * Display a listing of the resource.
      * ใช้สำหรับแสดงข้อมูลในส่วนของ Frontend
-     * ดึงข้อมูลของ Chirp โดยมีความสัมพันธ์กับ User (ผู้โพสต์) ซึ่งจะดึงแค่ id และ name ของผู้ใช้
+     * ดึงข้อมูลของ Chirp โดยมี User ซึ่งจะดึงแค่ id และ name ของผู้ใช้
      */
     public function index(): Response
     {
