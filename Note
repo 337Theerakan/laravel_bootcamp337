@@ -2,3 +2,6 @@
 //php artisan migrate:reset
 //composer run dev//npm run dev
 // php artisan serve
+
+ข้อมูลจะถูกเก็บไว้ใน ฐานข้อมูล (Database) ที่ได้ตั้งค่าตั้งค่า .env
+เเละ config/database.php
