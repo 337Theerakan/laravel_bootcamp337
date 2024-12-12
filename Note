@@ -1,4 +1,4 @@
 //เริ่มเก็บข้อมูลใหม่
 //php artisan migrate:reset
-//composer run dev
+//composer run dev//npm run dev
 // php artisan serve

@@ -30,4 +30,5 @@ Route::resource('chirps', ChirpController::class) //ไปที่ app -> Contr
     ->only(['index', 'store', 'update', 'destroy']) //ให้ทำงาน(เห็น) ตรง 'index', 'store', 'update', 'destroy ใน ChirpController
     ->middleware(['auth', 'verified']);
 
+    
 require __DIR__.'/auth.php';
